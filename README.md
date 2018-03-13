@@ -1,7 +1,7 @@
 mongostore
 ==========
 
-Forked from [kidstuff/mongostore](github.com/kidstuff/mongostore) and simply replace [gopkg.in/mgo.v2](https://github.com/go-mgo/mgo/tree/v2) with [globalsign/mgo](https://github.com/globalsign/mgo)
+Forked from [kidstuff/mongostore](https://github.com/kidstuff/mongostore) and simply replace [gopkg.in/mgo.v2](https://github.com/go-mgo/mgo/tree/v2) with [globalsign/mgo](https://github.com/globalsign/mgo)
 
 ### file tests
 ```
