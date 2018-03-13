@@ -6,12 +6,13 @@ package mongostore
 
 import (
 	"errors"
-	"github.com/gorilla/securecookie"
-	"github.com/gorilla/sessions"
-	"gopkg.in/mgo.v2"
-	"gopkg.in/mgo.v2/bson"
 	"net/http"
 	"time"
+
+	"github.com/globalsign/mgo"
+	"github.com/globalsign/mgo/bson"
+	"github.com/gorilla/securecookie"
+	"github.com/gorilla/sessions"
 )
 
 var (
@@ -40,7 +41,7 @@ func NewMongoStore(c *mgo.Collection, maxAge int, ensureTTL bool,
 	store := &MongoStore{
 		Codecs: securecookie.CodecsFromPairs(keyPairs...),
 		Options: &sessions.Options{
-			Path: "/",
+			Path:   "/",
 			MaxAge: maxAge,
 		},
 		Token: &CookieToken{},

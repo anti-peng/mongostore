@@ -8,11 +8,12 @@ package mongostore
 
 import (
 	"encoding/gob"
-	"github.com/gorilla/sessions"
-	"gopkg.in/mgo.v2"
 	"net/http"
 	"net/http/httptest"
 	"testing"
+
+	"github.com/globalsign/mgo"
+	"github.com/gorilla/sessions"
 )
 
 type FlashMessage struct {
